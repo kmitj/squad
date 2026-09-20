@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScreenLens — Support</title>
+<meta name="description" content="Help for ScreenLens on macOS: the shortcut, the Screen Recording permission, what each action does, purchases, and how to reach a person.">
+<meta name="robots" content="index, follow">
+<link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f6f7f9;
+    --text: #1d1f23;
+    --muted: #5f6672;
+    --rule: #e2e5ea;
+    --accent: #2f6df6;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181c;
+      --surface: #1e2126;
+      --text: #e8eaed;
+      --muted: #a2a9b4;
+      --rule: #2c3038;
+      --accent: #6d9dff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 28px; margin-bottom: 36px; }
+  .eyebrow {
+    font-size: 13px; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; letter-spacing: -0.02em; }
+  .updated { color: var(--muted); font-size: 15px; margin: 0; }
+  .lede {
+    font-size: 19px; line-height: 1.55; margin: 28px 0 0;
+  }
+  h2 {
+    font-size: 22px; line-height: 1.3; margin: 44px 0 14px;
+    letter-spacing: -0.01em; scroll-margin-top: 24px;
+  }
+  h3 { font-size: 17px; margin: 28px 0 10px; }
+  p { margin: 0 0 16px; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin: 0 0 8px; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); }
+  code {
+    font-family: var(--mono); font-size: .88em;
+    background: var(--surface); border: 1px solid var(--rule);
+    border-radius: 5px; padding: 1px 5px;
+  }
+  table {
+    width: 100%; border-collapse: collapse; margin: 0 0 20px;
+    font-size: 16px;
+  }
+  th, td {
+    text-align: left; padding: 10px 12px;
+    border-bottom: 1px solid var(--rule); vertical-align: top;
+  }
+  th { font-weight: 600; width: 45%; }
+  td { color: var(--muted); }
+  .card {
+    background: var(--surface); border: 1px solid var(--rule);
+    border-radius: 10px; padding: 18px 22px; margin: 0 0 24px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  kbd {
+    font: 600 14px/1 var(--mono);
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 5px;
+    padding: 3px 6px;
+    white-space: nowrap;
+  }
+  nav.toc { margin: 0 0 8px; }
+  nav.toc ol { margin: 0; padding-left: 22px; color: var(--muted); }
+  nav.toc li { margin: 0 0 6px; }
+  footer {
+    margin-top: 56px; padding-top: 24px;
+    border-top: 1px solid var(--rule); color: var(--muted); font-size: 15px;
+  }
+  footer a { color: var(--accent); }
+  @media (max-width: 540px) {
+    .wrap { padding: 36px 18px 64px; }
+    h1 { font-size: 28px; }
+    body { font-size: 16px; }
+    th { width: auto; }
+    table, thead, tbody, th, td, tr { display: block; }
+    th { border-bottom: 0; padding-bottom: 2px; }
+    td { padding-top: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">ScreenLens for macOS</p>
+  <h1>Support</h1>
+  <p class="updated">Last updated: 20 September 2026</p>
+</header>
+
+<p class="lede">
+  ScreenLens reads whatever you select on screen and offers the one action you
+  were about to look for. Press <strong>&#8679;&#8984;2</strong>, drag a
+  rectangle, take the result.
+</p>
+
+<p>
+  If something does not behave, the answer is probably below. If it is not,
+  write &mdash; a person reads that mailbox.
+</p>
+
+<nav class="toc" aria-label="Contents">
+  <ol>
+    <li><a href="#start">Getting started</a></li>
+    <li><a href="#permission">Screen Recording permission</a></li>
+    <li><a href="#shortcut">The shortcut</a></li>
+    <li><a href="#actions">What the actions do</a></li>
+    <li><a href="#limits">Known limits in 1.0</a></li>
+    <li><a href="#history">History and privacy</a></li>
+    <li><a href="#purchase">Trial, purchase and restore</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</nav>
+
+<h2 id="start">Getting started</h2>
+
+<table>
+  <tbody>
+    <tr><th>Requires</th><td>macOS 15 or later, Apple silicon or Intel</td></tr>
+    <tr><th>Where it lives</th><td>The menu bar. There is no Dock icon and no main window.</td></tr>
+    <tr><th>Permission needed</th><td>Screen Recording, and nothing else</td></tr>
+    <tr><th>Account needed</th><td>None, ever</td></tr>
+  </tbody>
+</table>
+
+<p>
+  Press <strong>&#8679;&#8984;2</strong>, drag across anything &mdash; a
+  paragraph, a table, a QR code, a block of code &mdash; and release. A small
+  panel appears beside the selection with the actions that fit what it found.
+  <kbd>Esc</kbd> cancels at any point, and a click without a drag cancels too.
+</p>
+
+<h2 id="permission">Screen Recording permission</h2>
+
+<p>
+  macOS requires it before any app can read the screen, including a region you
+  selected yourself. ScreenLens asks on your first capture, not at launch, and
+  captures only the rectangle you drag. Nothing is captured while the app is
+  idle and no stream is ever left open.
+</p>
+
+<p>
+  <strong>If captures fail after an update or a reinstall</strong>, macOS ties
+  the permission to the app's code signature, so an older entry can remain
+  switched on in System Settings while every capture comes back empty. The fix:
+</p>
+
+<div class="card">
+  <p>
+    System Settings &rarr; Privacy &amp; Security &rarr; Screen Recording &rarr;
+    select ScreenLens &rarr; <strong>&minus;</strong> to remove it &rarr; quit
+    ScreenLens and open it again. Grant the permission when it asks.
+  </p>
+</div>
+
+<h2 id="shortcut">The shortcut</h2>
+
+<p>
+  The default is <strong>&#8679;&#8984;2</strong> and it can be changed in
+  Settings &rarr; General. ScreenLens will not take over the macOS screenshot
+  shortcuts.
+</p>
+
+<p>
+  If a combination refuses to record, another application already holds it. The
+  window server decides who wins, and ScreenLens cannot see the full list of
+  what other apps have claimed &mdash; the sandbox does not allow it. Pick a
+  different combination.
+</p>
+
+<h2 id="actions">What the actions do</h2>
+
+<table>
+  <tbody>
+    <tr><th>Text</th><td>Copy, Copy Clean Text (joins the lines OCR broke), Translate, Summarize</td></tr>
+    <tr><th>Table</th><td>Copy Table, CSV, TSV, Markdown</td></tr>
+    <tr><th>Code</th><td>Copy Code, Without Line Numbers, Explain</td></tr>
+    <tr><th>QR or barcode</th><td>Open Link, Copy Link, Copy Content</td></tr>
+    <tr><th>Link, e-mail, phone</th><td>Open, Copy, Compose Email</td></tr>
+    <tr><th>No text found</th><td>Copy Image, Save Image</td></tr>
+  </tbody>
+</table>
+
+<p>
+  A link is never opened on its own. The panel shows the real domain first, and
+  it opens only when you press the button.
+</p>
+
+<p>
+  <kbd>&#8984;C</kbd> runs the primary action, <kbd>Return</kbd> the same,
+  <kbd>Esc</kbd> closes the panel.
+</p>
+
+<h2 id="limits">Known limits in 1.0</h2>
+
+<ul>
+  <li>
+    <strong>Table recognition needs macOS 26.</strong> The structured document
+    recognizer does not exist on macOS 15, so on those systems a table is read
+    as plain text and the CSV, TSV and Markdown actions do not appear.
+  </li>
+  <li>
+    <strong>A selection stays on the display it started on.</strong> A drag that
+    runs onto a second screen is trimmed at the boundary.
+  </li>
+  <li>
+    <strong>Multi-column text is read across the columns</strong>, not down each
+    one.
+  </li>
+  <li>
+    <strong>Translation may need a download.</strong> The first translation into
+    a given language can prompt macOS to fetch its language assets; ScreenLens
+    shows a preparing state while that happens.
+  </li>
+  <li>
+    <strong>Summarize, Explain and Clean Up need Apple Intelligence.</strong> On
+    a Mac that cannot run it, those actions are not offered rather than shown
+    broken. Everything else works without them.
+  </li>
+  <li>
+    <strong>The magnifier shows a snapshot.</strong> It samples the screen as it
+    was the instant the overlay appeared, so content animating underneath is
+    magnified a moment late.
+  </li>
+</ul>
+
+<h2 id="history">History and privacy</h2>
+
+<p>
+  History keeps the recognized text, the content type, the date and the actions
+  you used &mdash; on your Mac, for seven days by default. Screenshot previews
+  are <em>off</em> by default; turning them on stores the images locally and
+  nowhere else. Retention, Pause and Clear are all in Settings &rarr; History.
+</p>
+
+<p>
+  The app has no network entitlement, which means it cannot transmit anything at
+  all. The full account is in the
+  <a href="screenlens-privacy.html">privacy policy</a>.
+</p>
+
+<h2 id="purchase">Trial, purchase and restore</h2>
+
+<p>
+  The free evaluation is 20 captures with every feature enabled. ScreenLens Pro
+  is a <strong>one-time purchase</strong>, not a subscription.
+</p>
+
+<p>
+  Bought it already, on this Mac or another one signed in to the same Apple
+  Account? Settings &rarr; About &rarr; <strong>Restore Purchases</strong>.
+</p>
+
+<p>
+  Refunds are handled by Apple, not by us:
+  <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
+</p>
+
+<h2 id="contact">Contact</h2>
+
+<p>
+  Bug reports, questions, and anything this page does not answer:
+</p>
+
+<div class="card">
+  <p>
+    <a href="mailto:privacy@concept-squad.app">privacy@concept-squad.app</a>
+  </p>
+  <p>
+    It helps to include your macOS version, your Mac model, and what you had
+    selected when it went wrong. Please do not send screenshots containing
+    anything you would not want read.
+  </p>
+</div>
+
+<footer>
+  <p>
+    ScreenLens is made by Concept Squad. &mdash;
+    <a href="/">concept-squad.app</a>
+  </p>
+</footer>
+
+</div>
+</body>
+</html>
